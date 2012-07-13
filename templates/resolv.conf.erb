@@ -1,0 +1,5 @@
+<% if resolv_search != 'UNDEFINED' %>search <% resolv_search.each do |s| -%><%= s %> <% end -%><% end %>
+
+<% resolv_nameserver.each do |ns| -%>
+nameserver <%= ns %>
+<% end -%>
